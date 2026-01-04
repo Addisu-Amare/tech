@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 3333
+
+website:
+  title: "Addisu 550"
+
+  page-footer:
+    right: "0941813057estifanos@gmail.com"
+    left: ""
+
+  sidebar:
+    logo: "images/addisu_photo.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: github
+        href: https://github.com/Addisu-Amare/
+        text: "Addisu 210 GitHub"
+
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Home 
+      - section: "Resources"
+        contents:
+          - href: resource/python.qmd
+            text: "Python"
+      - section: "Cheat Sheets"
+        contents:
+          - href: cheatsheets/python.pdf
+            text: "Python Basics"
+          - href: cheatsheets/pandas.pdf
+            text: "Pandas"
+          - href: cheatsheets/conda.pdf
+            text: "Conda"
+          - href: cheatsheets/matplotlib.pdf
+            text: "Matplotlib"
+          - href: cheatsheets/seaborn.pdf
+            text: "Seaborn"
+format:
+  html:
+    highlight-style: solarized
+    theme: cosmo
+    css: styles.css
+    code-copy: true
+    code-overflow: wrap
+    toc: true
